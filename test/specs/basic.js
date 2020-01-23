@@ -35,12 +35,9 @@ describe("New Webmail Page", function() {
 
     });
 
-    it("Change location & Search bar", function() {
+    it("Change location", function() {
         browser.url("https://www.amazon.com/");
         browser.pause(2000);
-        browser.call(
-            async () => await percySnapshot(browser, "Change location", { widths: [1280] })
-            );
         $("#nav-packard-glow-loc-icon").click();
         $("#GLUXCountryListDropdown").click();
         $("#GLUXCountryList_53").click();
@@ -49,7 +46,9 @@ describe("New Webmail Page", function() {
         $("span#a-autoid-3.a-button.a-button-primary").click();
         browser.pause(3000);
        
-        
+        browser.call(
+            async () => await percySnapshot(browser, "Change location", { widths: [1280] })
+            );
        });
 
     it("Add and Go to Cart", function() {
@@ -67,7 +66,7 @@ describe("New Webmail Page", function() {
        });
     
 
-    it("Back to homepage through logo, scroll to footer", function() {
+    it("Back to homepage through logo scroll to footer", function() {
         browser.url("https://www.amazon.com/Amazon-Gift-Card-Print-Logo/dp/B07P76HM3B/ref=sr_1_14?keywords=amazon&qid=1579194199&sr=8-14/");
         browser.pause(2000);       
         $("#nav-logo").click();
