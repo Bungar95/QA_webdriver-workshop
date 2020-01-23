@@ -41,9 +41,9 @@ describe("New Webmail Page", function() {
         $("#nav-packard-glow-loc-icon").click();
         $("#GLUXCountryListDropdown").click();
         $("#GLUXCountryList_53").click();
-        browser.pause(1000);
+        browser.pause(2000);
         
-        $("span#a-autoid-3.a-button.a-button-primary").click();
+        $("div.a-popover-footer button").click();
         browser.pause(3000);
        
         browser.call(
@@ -65,7 +65,6 @@ describe("New Webmail Page", function() {
    );
        });
     
-
     it("Back to homepage through logo scroll to footer", function() {
         browser.url("https://www.amazon.com/Amazon-Gift-Card-Print-Logo/dp/B07P76HM3B/ref=sr_1_14?keywords=amazon&qid=1579194199&sr=8-14/");
         browser.pause(2000);       
