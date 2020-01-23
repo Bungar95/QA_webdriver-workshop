@@ -130,7 +130,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 66600000
     },
     //
     // =====
@@ -250,4 +250,12 @@ exports.config = {
     */
     //onReload: function(oldSessionId, newSessionId) {
     //}
+
+    before: function(capabilities, specs) {
+        // Import percySnapshot function
+        const { percySnapshot } = require("@percy/webdriverio");
+        // Make percySnapshot available as a global variable in all wdio tests
+        global.percySnapshot = percySnapshot;
+      }
+     
 }
