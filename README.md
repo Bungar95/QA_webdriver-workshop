@@ -1,4 +1,6 @@
 # webdriver-workshop upute za instalaciju i pokretanje testova
+(GitHub projekt ne sadržava node_modules direktorij)
+
 
 1. preduvjeti su Chrome preglednik, Node.js+npm, uređivač teksta
 2. napraviti datoteku i smjestiti se u CMD-u unutar datoteke
