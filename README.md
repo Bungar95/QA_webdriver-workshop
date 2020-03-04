@@ -1,4 +1,5 @@
 # webdriver-workshop upute za instalaciju i pokretanje testova
+Primjer QA testiranja (vlastite vježbe s kolegija)
 (GitHub projekt ne sadržava node_modules direktorij)
 
 
